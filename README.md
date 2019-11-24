@@ -1,6 +1,6 @@
 # Intrusion-detection
 
-The idea behind this script is to find out all the devices or users connected to your network and alert you of the untrusted ones. It could help you find out which users are connecting to the network. It only takes a few seconds to run. You have the added capability of running this at 5 minute intervals or as you see fit to your needs.
+The purpose of this script is to give you the ability to find all of the devices or users connected to your network. If found, it will alert you of the untrusted ones. It could help you find out which users are connecting to the network. It only takes a few seconds to run. You have the added capability of running this at 5-minute intervals or as you see fit to your needs.
 
 This script will scan the network of your choice and will alert you of any devices not present in the whitelist. The whitelist is a list of MAC address that YOU add to it. The first time you run the script, the whitelist will be empty. You will need to configure the whitelist manualy so it's up to you to add your trusted devices to it. 
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python:
 import os
 import subprocess
 import xml.etree.ElementTree as ET

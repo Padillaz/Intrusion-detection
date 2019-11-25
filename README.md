@@ -27,7 +27,7 @@ Every time you run the detection script, a list of all detected devices will be 
 If you trust all these devices, you can import them with the following command:
 
 ```
-sudo ./trust-devices.py  data.db devices.mac
+sudo ./TrustedDevices.py  data.db devices.mac
 ```
 
 If you don't trust all of them, you can erase the one that you don't want and still import the file.
@@ -35,7 +35,7 @@ If you don't trust all of them, you can erase the one that you don't want and st
 The following command will flush the current whitelist and import the entries in devices.mac
 
 ```
-sudo ./trust-devices.py  data.db devices.mac
+sudo ./TrustedDevices.py  data.db devices.mac
 ```
 
 ### Installing
@@ -44,7 +44,7 @@ Download and unzip, then make sure you have installed the **Prerequisites**
 
 Things to do:
 
-- The folder should be writable because a devices.mac file is generated every time you launch the detect.py script
+- The folder should be writable because a devices.mac file is generated every time you launch the IntrusionDetection.py script
 - Don't forget to mark the python scripts as 'executables'
 
 ```
@@ -69,10 +69,10 @@ you should launch both programs with sudo:
 
 ```
 Syntax:
-	sudo ./detect.py  network_range  database
+	sudo ./IntrusionDetection.py  network_range  database
 
 example: 
-sudo ./detect.py 192.168.2.0/24 data.db
+sudo ./IntrusionDetection.py 192.168.2.0/24 data.db
 ```
 
 on the first run, all devices should be listed as untrusted, read the whitelist section. You need to run other script to import your trusted devices list.

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python:
 import os
 import re
 import sys
@@ -25,7 +25,7 @@ else:
 
         print("- Creating table (if needed)")
 
-        conn.execute('CREATE TABLE IF NONE EXISTS whitelist  (mac text, description text, primary key (mac));')
+        conn.execute("CREATE TABLE IF NONE EXISTS whitelist  (mac text, description text, primary key (mac));")
 
         f = open(sys.argv[2], "r")
         if f:

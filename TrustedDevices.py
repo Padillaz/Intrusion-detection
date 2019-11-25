@@ -35,7 +35,7 @@ else:
             print( "- processing whitelist")
             for r in f:
                 r=r.strip()
-                m = re.split("\|", r)
+                m = re.findall(r'(\w+(?=\))|\w)', r)
                 if m:
                     sql="insert or ignore into whitelist values (\"%s\",\"%s\");" % (m[0],m[1])
                     conn.execute(sql)

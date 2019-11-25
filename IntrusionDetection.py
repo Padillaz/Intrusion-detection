@@ -68,8 +68,8 @@ else:
     conn = sqlite3.connect(sys.argv[2])
     if conn:
 
-        conn.execute('CREATE TABLE scans  (id integer, ip text, mac text, vendor text, PRIMARY KEY (id, ip));')
-        conn.execute('CREATE TABLE whitelist  (mac text, description text, primary key (mac));')
+        conn.execute('CREATE TABLE IF NOT EXISTS scans (id integer, ip text, mac text, vendor text, PRIMARY KEY (id, ip));')
+        conn.execute('CREATE TABLE IF NOT EXISTS whitelist (mac text, description text, primary key (mac));')
         # SCAN NETWORK
         getNmapScan(sys.argv[1])
         count = validateHost()

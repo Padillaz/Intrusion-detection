@@ -28,7 +28,7 @@ else:
 
         print( "- Creating table (if needed)")
 
-        conn.execute('CREATE TABLE IF NOT EXISTS whitelist  (mac text, description text, primary key (mac));')
+        conn.execute('CREATE TABLE whitelist  (mac text, description text, primary key (mac));')
 
         f = open(sys.argv[2],"r")
         if f:

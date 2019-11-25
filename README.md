@@ -1,4 +1,4 @@
-# Intrusion-detection
+# IntrusionDetection
 
 The purpose of this script is to give you the ability to find all of the devices or users connected to your network. If found, it will alert you of the untrusted ones. It could help you find out which users are connecting to the network. It only takes a few seconds to run. You have the added capability of running this at 5-minute intervals or as you see fit to your needs.
 
@@ -22,7 +22,7 @@ sudo apt install python3 nmon
 ```
 
 ## Whitelist
-Every time you run the detection script, a list of all detected devices will be written in the file 'devices.mac'. 
+Every time you run the IntrusionDetection script, a list of all detected devices will be written in the file 'devices.mac'. 
 
 If you trust all these devices, you can import them with the following command:
 
